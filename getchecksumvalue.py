@@ -29,11 +29,4 @@ while checksumtype not in ['md5', 'sha1', 'sha256', 'sha512']:
     print("Invalid checksum type. Please choose from MD5, SHA1, SHA256, or SHA512.")
     checksumtype = input("Enter the checksum type (MD5, SHA1, SHA256, SHA512): ").lower()
 
-filechecksum = osfunction(filepath, checksumtype)
-
-checksumvalue = input("Enter the checksum value: ").lower()
-
-if checksumvalue == filechecksum:
-    print("Checksum value verified")
-else:
-    print("Checksum value not verified")
+print(osfunction(filepath, checksumtype))
