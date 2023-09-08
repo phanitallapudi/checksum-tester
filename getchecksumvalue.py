@@ -24,9 +24,6 @@ def osfunction(filepath, checksumtype):
 
 filepath = askopenfilename()
 
-checksumtype = input("Enter the checksum type (MD5, SHA1, SHA256, SHA512): ").lower()
-while checksumtype not in ['md5', 'sha1', 'sha256', 'sha512']:
-    print("Invalid checksum type. Please choose from MD5, SHA1, SHA256, or SHA512.")
-    checksumtype = input("Enter the checksum type (MD5, SHA1, SHA256, SHA512): ").lower()
+for checksumtype in ['md5', 'sha1', 'sha256', 'sha512']:
+    print(f"{checksumtype} -> {osfunction(filepath, checksumtype)}")
 
-print(osfunction(filepath, checksumtype))
