@@ -23,8 +23,8 @@ $ python checksum_verification_tool.py
 
 [File Selection Dialog Appears]
 Enter the checksum type (MD5, SHA1, SHA256, SHA512): sha256
-Enter the checksum value: e35a5b687a2c7d5e8f4b647b55b91db6604d3368455016a3210f1b6072390b4c
-Checksum value verified
+Enter the SHA256 checksum value: e35a5b687a2c7d5e8f4b647b55b91db6604d3368455016a3210f1b6072390b4c
+SHA256 Checksum value verified
 
 ```
 
